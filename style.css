@@ -1,0 +1,181 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-image: url(images/pattern.png);
+}
+
+.container {
+  width: min(96%, 800px);
+  min-width: 320px;
+  margin-inline: auto;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header {
+  padding: 1.4em 0;
+}
+
+header button {
+  width: 100px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: none;
+  background: chocolate;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+header button:hover {
+  background: #339966;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  -webkit-box-shadow: 0 0 0.4em 4px rgba(117, 19, 19, 0.37);
+          box-shadow: 0 0 0.4em 4px rgba(117, 19, 19, 0.37);
+}
+
+form > * {
+  display: block;
+  width: 100%;
+  margin: .4em 0;
+}
+
+main .entry {
+  background: white;
+  color: #3f3f3f;
+  padding: 1em;
+  margin: .5em 0;
+  border-radius: 1em;
+  -webkit-box-shadow: 0 0 1em 3px rgba(0, 0, 0, 0.295);
+          box-shadow: 0 0 1em 3px rgba(0, 0, 0, 0.295);
+}
+
+main .entry .entry-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .entry .entry-header button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  background: #adadad;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: white;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+
+main .entry .entry-header button:hover {
+  background: #c72c46;
+  -webkit-box-shadow: 0 0 0.4em 2px rgba(117, 19, 19, 0.37);
+          box-shadow: 0 0 0.4em 2px rgba(117, 19, 19, 0.37);
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+main .entry p {
+  text-align: left;
+}
+
+.modalBackdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(94, 76, 76, 0.205);
+}
+
+.modalBackdrop .createModal {
+  background: chocolate;
+  padding: 2em;
+  border-radius: .8em;
+  font-size: 1em;
+}
+
+.modalBackdrop .createModal label {
+  font-weight: bold;
+  color: white;
+}
+
+.modalBackdrop .createModal input,
+.modalBackdrop .createModal textarea {
+  padding: .4em;
+  border: none;
+}
+
+.modalBackdrop .createModal textarea {
+  resize: none;
+}
+
+.modalBackdrop .createModal .modalButtons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: .6em;
+}
+
+.modalBackdrop .createModal .modalButtons button {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+  padding: 1em;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  color: #333333;
+}
+
+.modalBackdrop .createModal .modalButtons button:hover {
+  background: #001aff;
+  color: white;
+}
+
+.modalBackdrop .createModal .modalButtons button:active {
+  background: #00d873;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+/*# sourceMappingURL=style.css.map */

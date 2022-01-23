@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <button id="newEntryButton">New Entry</button>
+        </header>
+        <main>
+        </main>
+    </div>
+    <div class="modalBackdrop" id="modalBackdrop" style="display: none;">
+        <div class="createModal">
+            <form action="">
+                <label for="">Title</label>
+                <input type="text" placeholder="Title" id="title">
+                <label for="">Description</label>
+                <textarea name="" id="" cols="30" rows="3"></textarea>
+                <div class="modalButtons">
+                    <button type="reset" id="cancelButton">Cancel</button>
+                    <button type="submit" id="submitButton">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
